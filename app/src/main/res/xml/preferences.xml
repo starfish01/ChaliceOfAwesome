@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="Your Name">
+    <EditTextPreference
+        android:key="name_prefrence"
+        android:title="Name"
+        android:summary="What is your name"/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Your Wins">
+
+    </PreferenceCategory>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_clear_db"
+        android:title="Delete All Wins" />
+
+
+</PreferenceScreen>

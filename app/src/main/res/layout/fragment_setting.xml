@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.com.patricklabes.chaliceofawesome.SettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/helloid"
+        android:layout_height="wrap_content"
+        android:text="Clear All Accomplishments" />
+
+    <Button
+        android:id="@+id/clearAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All Data" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/viewSplashScreen"
+        android:layout_height="wrap_content"
+        android:text="View tutorial again" />
+
+    <Button
+        android:id="@+id/viewSplashScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok" />
+
+
+</LinearLayout>
