@@ -8,9 +8,5 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_see_all"
-        android:title="All Accomplishments"
-        app:showAsAction="never"
-        />
+
 </menu>

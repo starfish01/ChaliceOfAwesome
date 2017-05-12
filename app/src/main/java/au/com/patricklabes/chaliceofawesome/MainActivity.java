@@ -19,10 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager fragmentManager = getFragmentManager();
     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-    SettingFragment settingFragment = new SettingFragment();
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences("PREFERENCE", 0);
 
-        //settings.edit().putBoolean("my_first_time", true).apply();
         if (settings.getBoolean("my_first_time", true)) {
-            // first time task
 
             settings.edit().putBoolean("my_first_time", false).apply();
             Intent intent = new Intent(this,IntroActivity.class);
@@ -88,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -103,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.first_layout,new SettingFragment()).addToBackStack("").commit();
 
                 break;
-            case R.id.action_see_all:
-                break;
+
         }
 
 

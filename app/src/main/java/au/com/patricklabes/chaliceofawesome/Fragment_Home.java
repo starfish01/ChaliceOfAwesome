@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.geniusforapp.fancydialog.FancyAlertDialog;
 
@@ -19,7 +18,6 @@ import com.geniusforapp.fancydialog.FancyAlertDialog;
 
 public class Fragment_Home extends Fragment {
 
-    TextView textView1;
     ImageView chalicImage;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
@@ -28,14 +26,6 @@ public class Fragment_Home extends Fragment {
         v = inflater.inflate(R.layout.fragment_home, container, false);
         chalicImage = (ImageView)v.findViewById(R.id.chaliceImage);
         chalicImage.setOnLongClickListener(chaliceLongClick);
-
-
-
-
-
-        //Data debug info
-
-        InformationBaton ib = new InformationBaton();
 
 
 
@@ -70,7 +60,6 @@ public class Fragment_Home extends Fragment {
         PersonalWins accomplishment = ib.getRandomAccomplishment(v);
 
         FancyAlertDialog.Builder alert = new FancyAlertDialog.Builder(v.getContext())
-                //.setTextTitle(accomplishment.getDate())
                 .setTextSubTitle(accomplishment.getAccomplishments())
                 .setBody(accomplishment.getDate())
                 
