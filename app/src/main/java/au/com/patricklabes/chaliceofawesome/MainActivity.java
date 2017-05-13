@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -49,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
             settings.edit().putBoolean("my_first_time", false).apply();
             Intent intent = new Intent(this,IntroActivity.class);
             startActivity(intent);
+            finish();
 
         }else{
-            fragmentTransaction.replace(R.id.first_layout,new Fragment_Home()).commit();
-            Log.i("Comments", "not first time");
+            fragmentTransaction.replace(R.id.first_layout,new Fragment_Home(),"hFRAG").commit();
         }
 
     }
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_settings:
 
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.first_layout,new SettingFragment()).addToBackStack("").commit();
+                fragmentTransaction.replace(R.id.first_layout,new SettingFragment(),"sFRAG").addToBackStack("").commit();
 
                 break;
 
@@ -102,6 +101,22 @@ public class MainActivity extends AppCompatActivity {
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public void onBackPressed() {
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            //additional code
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
+
     }
 
 
