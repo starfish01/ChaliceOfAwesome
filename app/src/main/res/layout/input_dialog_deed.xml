@@ -6,14 +6,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Damn You're Awesome"
+        android:text="@string/input_dialog_deed_congratulation"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Accomplishment" />
+        android:text="@string/input_dialog_deed_title" />
 
     <EditText
         android:id="@+id/editTextAccom"

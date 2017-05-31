@@ -69,8 +69,27 @@
     <!-- Example settings for Notifications -->
     <string name="pref_header_notifications">Notifications</string>
 
-    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <!--- input text -->
+    <string name="input_dialog_deed_title">Accomplishment</string>
+    <string name="input_dialog_deed_congratulation">Damn You\'re Awesome</string>
 
+    <!-- fragment_settings-->
+    <string name="settings_clear_all_accomplishments">Clear All Accomplishments</string>
+    <string name="settings_btn_clear_all_data">Clear All Data</string>
+    <string name="settings_view_tut_again">View tutorial again</string>
+    <string name="settings_btn_view_tut_again">Lets Go!</string>
+
+    <!--Slide 1,2,3 Tutorial-->
+    <string name="slide_1_title">Take a moment</string>
+    <string name="slide_1_line_1">to remember all the</string>
+    <string name="slide_1_line_2">Awesome things you\'ve done</string>
+
+    <string name="slide_2_title">Add your Accomplishments</string>
+
+    <string name="slide_3_title">Remind the Champion by</string>
+    <string name="slide_3_line_1">Holding down the Chalice</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
 

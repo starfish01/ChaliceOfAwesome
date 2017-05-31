@@ -10,26 +10,26 @@
         android:layout_width="wrap_content"
         android:textColor="@android:color/white"
         android:layout_height="wrap_content"
-        android:text="Clear All Accomplishments" />
+        android:text="@string/settings_clear_all_accomplishments" />
 
     <Button
         android:id="@+id/clearAllButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clear All Data" />
+        android:text="@string/settings_btn_clear_all_data" />
 
     <TextView
         android:layout_width="wrap_content"
         android:textColor="@android:color/white"
         android:id="@+id/viewSplashScreen"
         android:layout_height="wrap_content"
-        android:text="View tutorial again" />
+        android:text="@string/settings_view_tut_again" />
 
     <Button
         android:id="@+id/viewSplashScreenButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ok" />
+        android:text="@string/settings_btn_view_tut_again" />
 
 
 </LinearLayout>
